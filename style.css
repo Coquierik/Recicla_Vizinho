@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav{
+    width: 100%;
+    padding: 25px;
+    border-bottom: 2px solid #e3e3e3;
+}
+nav a{
+    margin: 0 20px;
+    color: grey;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: black;
+    padding: 2%;
+}
+header{
+    padding-top: calc(40px + 1rem + 2px);
+}
+h1{
+    margin-top: 10px;
+    font-size: 3.75rem;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+h1 + p{
+    width: 800px;
+    margin: 35px auto;
+}
+
+#cta-button{
+    text-decoration: none;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #d786ff, rgb(74, 74, 170));
+    display: inline-block;
+    padding: 1em 3em;
+    font-weight: 600;
+    border-radius: 1000px;
+    color: white;
+    transition: 350ms ease;
+}
+#cta-button:hover{
+    scale: 1.1;
+}
+
+.video-player{
+    margin-top: 30px;
+    width: min(1100px, 90%);
+    /*somehow, this is a height property*/
+    aspect-ratio: 16/9;
+    border-radius: 15px;
+}
+
+.products-container{
+    margin-top: 30px;
+}
+
+.item{
+    box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    align-content: center;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.item h2{
+    margin-bottom: 10px;
+}
+.item:first-child{
+    border: 1px solid black;
+}
+.item:nth-child(2){
+    background-color: rgb(131, 131, 224);
+    color: white;
+}
+.item:last-child{
+    background-color: black;
+    color: white;
+}
+
+form{
+    margin-top: 30px;
+}
+input{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font: inherit;
+    border-radius: 30px;
+}
+input[type="name"], input[type="email"]{
+    padding: 5px 20px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    background-color: #ebedf5;
+}
+
+input[type="submit"]{
+    margin-top: 2em;
+    width: 12em;
+    height: 3em;
+    background-color: #0071ff;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+input::placeholder{
+    text-align: center;
+}
+
+input[type="file"]{
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333;
+}
+textarea{
+    margin: 10px 0 15px 0;
+    width: 30em;
+    height: 10em;
+    border-radius: 15px;
+    padding: 10px 10px;
+    background-color: #ebedf5;
+    font-family: 'Times New Roman', Times, serif;
+}
+textarea::placeholder{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 50px;
+}
