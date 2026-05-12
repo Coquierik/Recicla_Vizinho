@@ -12,7 +12,8 @@ nav{
     border-bottom: 2px solid #e3e3e3;
 }
 nav a{
-    margin: 0 20px;
+    margin: 0 40px;
+    font-size: 25px;
     color: grey;
     text-decoration: none;
 }
@@ -35,7 +36,16 @@ h1 + p{
     width: 800px;
     margin: 35px auto;
 }
-
+h2{
+    margin-top: 10px;
+    font-size: 2.75rem;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+p{
+    font-size: 1.5em;
+    font-style: oblique;
+}
 #cta-button{
     text-decoration: none;
     text-transform: uppercase;
@@ -102,6 +112,7 @@ input{
 }
 input[type="name"], input[type="email"]{
     padding: 5px 20px;
+    font-size: 20px;
     width: 400px;
     height: 50px;
     border: none;
@@ -132,15 +143,22 @@ input[type="file"]{
 }
 textarea{
     margin: 10px 0 15px 0;
-    width: 30em;
+    width: 21em;
     height: 10em;
     border-radius: 15px;
     padding: 10px 10px;
     background-color: #ebedf5;
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
 textarea::placeholder{
     text-align: center;
     font-size: 20px;
     padding-top: 50px;
+}
+.rec{
+    margin: 5em;
+}
+.forms{
+    padding-top: 3em;
 }
