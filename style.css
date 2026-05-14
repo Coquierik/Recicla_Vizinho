@@ -211,20 +211,22 @@ section{
 
 .item:first-child{
     border: 1px solid black;
-    background-color: #080824;
+    background-color: #082409;
 }
 
 /* Card 2 */
 
 .item:nth-child(2){
-    background-color:  #111827;
+    border: 1px solid black;
+    background-color:  #1a2130;
     color: white;
 }
 
 /* Card 3 */
 
 .item:last-child{
-    background-color: rgb(26, 2, 26);
+    border: 1px solid black;
+    background-color: rgb(15, 7, 15);
     color: white;
 }
 
