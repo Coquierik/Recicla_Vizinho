@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ReciclaVizinho</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <a href="#" class="active">Inicio</a>
-        <a href="#">Sobre</a>
+
+        <a href="#sobre">Sobre</a>
         <a href="#ajudar">Como Ajudar</a>
         <a href="#report">Denúncia</a>
     </nav>
@@ -91,19 +91,46 @@
             </div>
         </section>
 
+        <section id="recicle">
+                <div class="card-grande2" id="sobre">
+                        <div class="imagem-card2">
+                            <img src="img/conceito-de-reciclagem-de-pessoas_23-2148534958.png" alt="">
+                        </div>
+                        <div class="conteudo-card2">
+                            <h2>Quem somos</h2>
+                            <p>
+                                Somos um grupo de três estudantes de Tecnologia comprometidos em desenvolver soluções que contribuam para um bairro mais limpo e sustentável. Criamos esta plataforma para facilitar denúncias de descarte irregular de entulho, promovendo a conscientização ambiental e a participação da comunidade na preservação dos espaços urbanos.
+                            </p>
+                        </div>
+                </div>
+        </section>
+
         <section class="forms" id="report">
             <div class="forms">
                 <h1>Informações</h1>
                 <p style="font-size: 25px;">Nos conte o que aconteceu.<br>
                 Sua denúncia será tratada com confidencialidade.</p>
-                    <form action="">
-                        <input type="name" placeholder="Nome">
-                        <input type="email" placeholder="E-mail">
-                        <input type="text" placeholder="Local">
-                        <textarea name="info" id="informacao" placeholder="Qual a situação?"></textarea>
-                        <input type="file">
-                        <input type="submit">
-                    </form>
+                <form
+                    name="denuncia"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                    enctype="multipart/form-data">
+
+                    <input type="hidden" name="form-name" value="denuncia">
+
+                    <p hidden>
+                        <input name="bot-field">
+                    </p>
+
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="text" name="local" placeholder="Local" required>
+                    <textarea name="info" placeholder="Qual a situação?" required></textarea>
+                    <input type="file" name="arquivo">
+
+                    <button type="submit">Enviar denúncia</button>
+                </form>
             </div>
         </section>
 </body>

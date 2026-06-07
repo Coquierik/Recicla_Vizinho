@@ -427,41 +427,30 @@ input{
 input[type="name"],
 input[type="email"],
 input[type="text"]{
-
     padding: 5px 20px;
-
     font-size: 20px;
-
     width: 400px;
     height: 50px;
-
     border: none;
-
     background-color: #ebedf5;
 }
 
 /* Botão enviar */
 
-input[type="submit"]{
+button{
   text-decoration: none;
     text-transform: uppercase;
     background: rgba(21, 51, 21, 0.836);
-
     display: inline-block;
-
     padding: 1.2em 5em;
-
     font-weight: 600;
-
     border-radius: 1000px;
-
     color: white;
-
     transition: 350ms ease;
-
     margin-top: 20px;
+    cursor: pointer;
 }
-input[type="submit"]:hover{
+button:hover{
     scale: 1.1;
 }
 
