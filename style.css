@@ -30,31 +30,47 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Compensação para o menu fixo não esconder o topo do site */
+body {
+    padding-top: 100px; 
+}
+
 
 /* =========================
    MENU DE NAVEGAÇÃO
 ========================= */
 
 nav{
+    position: fixed; /* Fixa o menu na tela */
+    top: 0;
+    left: 0;
     width: 100%;
     padding: 25px;
+    background-color: white; /* Fundo sólido para cobrir o site enquanto rola */
     border-bottom: 2px solid #e3e3e3;
+    z-index: 1000; /* Garante que fica por cima de tudo */
+    box-sizing: border-box; /* Evita que o padding alargue a tela */
 }
 
 nav a{
-    margin: 0 40px;
+    margin: 0 20px;
+    padding: 10px 20px; /* Preenchimento interno fixo */
     font-size: 25px;
     color: rgb(59, 47, 47);
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid transparent; /* Borda invisível (evita o pulo) */
+    border-radius: 15px; /* Bordas arredondadas */
+    transition: 0.3s ease; /* Animação suave */
 }
 
 /* Efeito ao passar o mouse */
 
 nav a:hover{
-    text-decoration: underline;
-    color: black;
-    padding: 2%;
+    text-decoration: none; /* Tira o sublinhado */
+    color: #003b39; /* Fica verde escuro */
+    border: 2px solid #6f8f88; /* Aparece a bordinha */
+    background-color: rgba(111, 143, 136, 0.1); /* Fundo sutil */
 }
 
 
